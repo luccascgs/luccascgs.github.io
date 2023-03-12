@@ -1,0 +1,287 @@
+:root {
+  --black: #1d1d1a;
+  --offset: #363630;
+  --white: #ffffff;
+  --gray: #8f9ba8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+input, textarea, button {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+
+body {
+  background: var(--black);
+  font-family: "Inter", sans-serif;
+  padding-bottom: 2rem;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+em {
+  color: var(--white);
+}
+
+/* Nav */
+
+nav {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  max-height: 48px;
+}
+
+.logo-color-odd,
+.logo-color-even {
+  transition: 0.7s ease;
+}
+
+/* About */
+
+.about {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  color: var(--gray);
+}
+
+.about h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 1rem 0;
+  background-image: linear-gradient(45deg, #80FFEA, #8AFF80);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.about .profile {
+  border-radius: 10px;
+  max-width: 300px;
+  margin: 0 auto 1rem auto;
+}
+
+.about p {
+  line-height: 1.5rem;
+}
+
+.quote {
+  border-left: 3px solid var(--offset);
+  margin-top: 1rem;
+  padding-left: 1rem;
+  display: flex;
+  height: 60px;
+}
+
+.quote-marks {
+  font-family: "Times", "Inter", serif;
+  content: open-quote;
+  color: var(--offset);
+  font-size: 4rem;
+  margin-right: 1rem;
+}
+
+.quote .content {
+  padding-top: 1rem;
+}
+
+.quote .phrase {
+  font-style: italic;
+}
+
+.quote .author {
+  font-weight: bold;
+  text-align: right;
+}
+
+.quote p {
+  margin: 0;
+}
+
+/* Projects */
+
+.projects {
+  margin: 1rem;
+}
+
+.projects h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 1rem 0;
+  background-image: linear-gradient(45deg, #FF80BF, #9580FF);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.projects .video {
+  background: var(--white);
+}
+
+.projects .video .content {
+  width: 100%;
+}
+
+.projects .video .content video {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.projects .video .label {
+  padding: 1rem;
+  font-weight: bold;
+  color: var(--black);
+}
+
+.projects .video + .video {
+  margin-top: 1rem;
+}
+
+/* FAQ */
+.faq {
+  margin: 1rem;
+}
+
+.faq h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 1rem 0;
+  background-image: linear-gradient(45deg, #9580FF, #80FFEA);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.faq .item {
+  width: 100%;
+  padding: 1rem 0;
+  border-top: 1px solid var(--gray);
+  color: var(--gray);
+}
+
+.faq .item.last {
+  border-bottom: 1px solid var(--gray);
+}
+
+.faq .item .controller {
+  margin-left: 1rem;
+}
+
+.faq .item .question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1.5rem;
+}
+
+.faq .item .answer {
+  width: calc(100% - 32px);
+  color: var(--white);
+  margin-top: 0.5rem;
+  line-height: 1.5rem;
+  display: none;
+}
+
+.faq .item .controller {
+  transition: .2s ease;
+}
+
+/* Contact */
+.contact {
+  margin: 1rem;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 1rem 0;
+  background-image: linear-gradient(45deg, #9442FE, #3378FF);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-form + .input-form {
+  margin-top: 1rem;
+}
+
+.input-form label {
+  color: var(--gray);
+  margin-bottom: 4px;
+}
+
+.input-form input {
+  height: 48px;
+  width: 100%;
+  padding: 0 1rem;
+  border: 1px solid var(--gray);
+  color: var(--white);
+  border-radius: 3px;
+}
+
+.input-form textarea {
+  min-height: 48px;
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid var(--gray);
+  color: var(--white);
+  border-radius: 3px;
+}
+
+.input-form .actions {
+  display: flex;
+}
+
+.actions {
+  display: flex;
+  justify-content: end;
+  margin-top: 1rem;
+}
+
+.actions button {
+  background: var(--gray);
+  color: var(--white);
+  padding: 8px 16px;
+  border-radius: 3px;
+  transition: .2s ease;
+}
+
+.actions button:hover {
+  background: var(--offset);
+}
