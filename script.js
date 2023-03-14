@@ -35,11 +35,12 @@ function rotateLogoColor(index) {
 }
 
 function setupFaqControllers() {
-  const controllers = document.getElementsByClassName('controller');
+  const items = document.getElementsByClassName('faq-item');
 
-  for (const controller of controllers) {
+  for (const item of items) {
 
-    controller.addEventListener('click', () => {
+    item.addEventListener('click', () => {
+      const controller = item.getElementsByClassName('controller')[0];
       const state = controller.dataset.state;
       const rotation = state === 'closed' ? 'rotate(180deg)' : 'rotate(0)'
       const display = state === 'closed' ? 'block' : 'none';

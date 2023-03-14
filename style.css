@@ -153,6 +153,7 @@ nav .controls {
 
 .projects .video {
   background: var(--white);
+  border-radius: 3px;
 }
 
 .projects .video .content {
@@ -160,6 +161,7 @@ nav .controls {
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
+  border-radius: 3px 3px 0 0;
 }
 
 .projects .video iframe {
@@ -168,6 +170,7 @@ nav .controls {
   left: 0;
   width: 100%;
   height: 100%;
+  border-radius: 3px 3px 0 0;
 }
 
 .projects .video .label {
@@ -177,7 +180,7 @@ nav .controls {
 }
 
 .projects .video + .video {
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 /* FAQ */
@@ -198,42 +201,44 @@ nav .controls {
   -moz-text-fill-color: transparent;
 }
 
-.faq .item {
+.faq .faq-item {
   width: 100%;
   padding: 1rem 0;
   border-top: 1px solid var(--gray);
-  color: var(--gray);
+  color: var(--white);
 }
 
-.faq .item.last {
+.faq .faq-item:hover {
+  cursor: pointer;
+}
+
+.faq .faq-item.last {
   border-bottom: 1px solid var(--gray);
 }
 
-.faq .item .controller {
+.faq .faq-item .controller {
   margin-left: 1rem;
 }
 
-.faq .item .question {
+.faq .faq-item .question {
   display: flex;
   justify-content: space-between;
   align-items: center;
   line-height: 1.5rem;
 }
 
-.faq .item .answer {
+.faq .faq-item .answer {
   width: calc(100% - 32px);
-  color: var(--white);
+  color: var(--gray);
   margin-top: 0.5rem;
   line-height: 1.5rem;
   display: none;
 }
 
-.faq .item .controller {
+.faq .faq-item .controller {
   transition: .2s ease;
-}
-
-.faq .item .controller:hover {
-  cursor: pointer;
+  top: 50%;
+  left: 50%;
 }
 
 /* Contact */
