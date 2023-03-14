@@ -141,7 +141,7 @@ nav .controls {
 .projects h2 {
   font-size: 2rem;
   font-weight: 800;
-  margin: 1rem 0;
+  margin: 2rem 0 1rem 0;
   background-image: linear-gradient(45deg, #FF80BF, #9580FF);
   background-size: 100%;
   background-repeat: repeat;
@@ -188,8 +188,8 @@ nav .controls {
 .faq h2 {
   font-size: 2rem;
   font-weight: 800;
-  margin: 1rem 0;
-  background-image: linear-gradient(45deg, #9580FF, #80FFEA);
+  margin: 3rem 0 1rem 0;
+  background-image: linear-gradient(45deg, #9442FE, #3378FF);
   background-size: 100%;
   background-repeat: repeat;
   -webkit-background-clip: text;
@@ -238,14 +238,14 @@ nav .controls {
 
 /* Contact */
 .contact {
-  margin: 1rem;
+  margin: 1rem 0 3rem 0;
 }
 
 .contact h2 {
   font-size: 2rem;
   font-weight: 800;
   margin: 1rem 0;
-  background-image: linear-gradient(45deg, #9442FE, #3378FF);
+  background-image: linear-gradient(45deg, #9580FF, #80FFEA);
   background-size: 100%;
   background-repeat: repeat;
   -webkit-background-clip: text;
@@ -254,59 +254,43 @@ nav .controls {
   -moz-text-fill-color: transparent;
 }
 
-.input-form {
+.contact ul {
+  margin-top: 64px;
+  list-style: none;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.input-form + .input-form {
-  margin-top: 1rem;
+.contact li {
+  width: 36px;
 }
 
-.input-form label {
-  color: var(--gray);
-  margin-bottom: 4px;
+.contact li + li {
+  margin-left: 2rem;
 }
 
-.input-form input {
-  height: 48px;
+.contact svg {
   width: 100%;
-  padding: 0 1rem;
-  border: 1px solid var(--gray);
-  color: var(--white);
-  border-radius: 3px;
-}
-
-.input-form textarea {
-  min-height: 48px;
-  width: 100%;
-  padding: 1rem;
-  border: 1px solid var(--gray);
-  color: var(--white);
-  border-radius: 3px;
-}
-
-.input-form .actions {
-  display: flex;
-}
-
-.actions {
-  display: flex;
-  justify-content: end;
-  margin-top: 1rem;
-}
-
-.actions button {
-  background: var(--gray);
-  color: var(--white);
-  padding: 8px 16px;
-  border-radius: 3px;
+  height: auto;
+  fill: #fff;
   transition: .2s ease;
-  cursor: pointer;
 }
 
-.actions button:hover {
-  background: var(--offset);
+.contact .mail:hover {
+  fill: #9442FE;
+}
+
+.contact .behance:hover {
+  fill: #053EFF;
+}
+
+.contact .instagram:hover {
+  fill: #DD2A7B;
+}
+
+.contact .twitter:hover {
+  fill: #00ACEE;
 }
 
 @media only screen and (min-width : 480px) {
