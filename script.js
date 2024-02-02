@@ -18,14 +18,10 @@ const gradients = [
 ];
 
 function rotateLogoColor(index) {
-  const oddColors = document.getElementsByClassName('logo-color-odd');
-  const evenColors = document.getElementsByClassName('logo-color-even');
+  const logoColors = document.getElementsByClassName('logo-color');
 
   setTimeout(() => {
-    for (const color of oddColors) {
-        color.style.setProperty('stop-color', gradients[index].odd);
-      }
-      for (const color of evenColors) {
+    for (const color of logoColors) {
         color.style.setProperty('stop-color', gradients[index].even);
       }
 
