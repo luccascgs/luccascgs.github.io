@@ -173,6 +173,12 @@ nav .controls {
   border-radius: 3px 3px 0 0;
 }
 
+.projects .comparasion{
+  height: 100%;
+  witdh: 50%;
+  margin: auto;
+}
+
 .projects .video .label {
   padding: 1rem;
   font-weight: bold;
