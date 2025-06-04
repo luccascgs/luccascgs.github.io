@@ -18,10 +18,14 @@ const gradients = [
 ];
 
 function rotateLogoColor(index) {
-  const logoColors = document.getElementsByClassName('logo-color');
+  const oddColors = document.getElementsByClassName('logo-color-odd');
+  const evenColors = document.getElementsByClassName('logo-color-even');
 
   setTimeout(() => {
-    for (const color of logoColors) {
+    for (const color of oddColors) {
+        color.style.setProperty('stop-color', gradients[index].odd);
+      }
+      for (const color of evenColors) {
         color.style.setProperty('stop-color', gradients[index].even);
       }
 
@@ -52,3 +56,13 @@ function setupFaqControllers() {
 
 rotateLogoColor(0);
 setupFaqControllers();
+
+function toggleMode(){
+  const toggleSwitch = document.getElementById("toggle")
+
+  const article = document.querySelector('.projects article')
+
+  article.classList.toggle('dev')
+
+  article.classList.toggle('artist')
+}
